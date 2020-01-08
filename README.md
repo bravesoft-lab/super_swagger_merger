@@ -3,7 +3,7 @@
 swaggerファイルをURL、パラメーター、出力内容をディレクトリごとに分割管理することで、
 従来の一つのyamlファイルで記述するよりも、APIの編集を便利にしたもの
 ## DEMO
-![result](https://github.com/bravesoft-lab/super_swagger_merger/blob/demo.gif)
+![result](https://github.com/bravesoft-lab/super_swagger_merger/blob/media/blob/demo.gif)
 
 ## ディレクトリ構成
 ```
