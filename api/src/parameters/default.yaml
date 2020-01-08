@@ -1,0 +1,15 @@
+portal_id:
+  required: true
+  type: integer
+  formtat: int64
+  description: portalのID
+event_id:
+  required: true
+  type: integer
+  formtat: int64
+  description: eventのID
+content_id:
+  required: true
+  type: integer
+  formtat: int64
+  description: contentのID

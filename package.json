@@ -1,0 +1,33 @@
+{
+  "name": "excelent_swagger_ci",
+  "version": "0.0.1",
+  "private": true,
+  "description": "New Swagger API Project",
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.12.3",
+    "redoc": "^2.0.0-rc.18",
+    "swagger-express-mw": "^0.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "exec": "^0.2.1",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "gulp-exec": "^4.0.0",
+    "should": "^7.1.0",
+    "supertest": "^1.0.0",
+    "swagger-merger": "^1.4.3"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "swagger project test",
+    "swagger": "swagger project edit",
+    "merge": "swagger-merger --debug -i ./api/src/main.yaml -o ./swagger.yaml",
+    "redoc": "redoc-cli bundle ./swagger.yaml",
+    "watch": "gulp watch"
+  }
+}

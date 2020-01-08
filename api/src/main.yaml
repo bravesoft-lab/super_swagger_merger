@@ -1,0 +1,9 @@
+openapi: 3.0.0
+info:
+  version: first version
+  title: 実況 Api
+paths:
+  # ユーザーAPI
+  jref#commentator_ua: "./paths/user_data_api.yaml"
+  # コンソールAPI
+  $ref#commentator_cm: "./paths/console_api.yaml"

@@ -1,0 +1,73 @@
+openapi: 3.0.0
+info:
+  version: first version
+  title: 実況 Api
+paths:
+  'jref#commentator_ua': ./paths/user_data_api.yaml
+  '/console/api/v2/module/base/{portal_id}/{event_id}/{content_id}':
+    portal_id:
+      required: true
+      type: integer
+      formtat: int64
+      description: portalのID
+    event_id:
+      required: true
+      type: integer
+      formtat: int64
+      description: eventのID
+    content_id:
+      required: true
+      type: integer
+      formtat: int64
+      description: contentのID
+    get:
+      tags:
+        - console_api
+      summary: 基本設定を取得(Get basic settings)
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: object
+                parameters:
+                  jpn:
+                    type: object
+                    parameters:
+                      title:
+                        type: string
+                        description: タイトル
+                example:
+                  jpn:
+                    title: タイトル
+    post:
+      tags:
+        - console_api
+      summary: 基本設定を保存(Save basic settings)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              parameters:
+                jpn:
+                  type: object
+                  parameters:
+                    title:
+                      type: string
+                      description: タイトル
+              example:
+                jpn:
+                  title: タイトル
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: ''

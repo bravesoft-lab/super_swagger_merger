@@ -1,0 +1,30 @@
+# コンテンツデザイン
+/console/api/v2/module/base/{portal_id}/{event_id}/{content_id}:
+  $ref: "../parameters/default.yaml"
+  get:
+    tags:
+      - console_api
+    summary: 基本設定を取得(Get basic settings)
+    responses:
+      "200":
+        description: success
+        content:
+          application/json:
+            schema:
+              $ref: "../components/console_api/base.yaml"
+  post:
+    tags:
+      - console_api
+    summary: 基本設定を保存(Save basic settings)
+    requestBody:
+      content:
+        application/json:
+          schema:
+            $ref: "../components/console_api/base.yaml"
+    responses:
+      "200":
+        description: success
+        content:
+          application/json:
+            schema:
+              $ref: "../components/success.yaml"

@@ -1,0 +1,11 @@
+type: object
+parameters:
+  jpn:
+    type: object
+    parameters:
+      title:
+        type: string
+        description: タイトル
+example:
+  jpn:
+    title: タイトル
