@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   version: first version
-  title: 実況 Api
+  title: サンプル Api
 paths:
   # ユーザーAPI
   jref#commentator_ua: "./paths/user_data_api.yaml"

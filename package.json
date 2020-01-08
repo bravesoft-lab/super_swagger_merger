@@ -9,8 +9,8 @@
   "main": "app.js",
   "dependencies": {
     "express": "^4.12.3",
-    "redoc": "^2.0.0-rc.18",
-    "swagger-express-mw": "^0.1.0"
+    "redoc": "^2.0.0-rc.20",
+    "swagger-express-mw": "^0.7.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",

@@ -1,5 +1,5 @@
 # コンテンツデザイン
-/console/api/v2/module/base/{portal_id}/{event_id}/{content_id}:
+/console/api/v2/module/base/{base_id}/{detail_id}:
   $ref: "../parameters/default.yaml"
   get:
     tags:

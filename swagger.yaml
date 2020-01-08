@@ -1,25 +1,25 @@
 openapi: 3.0.0
 info:
   version: first version
-  title: 実況 Api
+  title: サンプル Api
 paths:
   'jref#commentator_ua': ./paths/user_data_api.yaml
-  '/console/api/v2/module/base/{portal_id}/{event_id}/{content_id}':
-    portal_id:
-      required: true
-      type: integer
-      formtat: int64
-      description: portalのID
-    event_id:
-      required: true
-      type: integer
-      formtat: int64
-      description: eventのID
-    content_id:
-      required: true
-      type: integer
-      formtat: int64
-      description: contentのID
+  '/console/api/v2/module/base/{base_id}/{detail_id}':
+    parameters:
+      - name: base_id
+        in: path
+        description: base id
+        required: true
+        schema:
+          type: integer
+          format: int64
+      - name: detail_id
+        in: path
+        description: detail id
+        required: true
+        schema:
+          type: integer
+          format: int64
     get:
       tags:
         - console_api

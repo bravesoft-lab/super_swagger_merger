@@ -1,8 +1,9 @@
-# プロジェクト名：Super Swagger Merger
+# Super Swagger Merger
 ## 概要
 swaggerファイルをURL、パラメーター、出力内容をディレクトリごとに分割管理することで、
 従来の一つのyamlファイルで記述するよりも、APIの編集を便利にしたもの
 ## ディレクトリ構成
+```
 ├── README.md
 ├── api
 │   └── src
@@ -23,7 +24,7 @@ swaggerファイルをURL、パラメーター、出力内容をディレクト�
 ├── package.json
 ├── redoc-static.html <- swagger,yamlをHTMLに変換したもの、最終的に出力されるもの
 ├── swagger.yaml <- 結合されて出力されるyaml
-
+```
 ## 使い方
 ```
 npm run watch
