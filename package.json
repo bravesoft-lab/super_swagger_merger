@@ -13,7 +13,7 @@
     "swagger-express-mw": "^0.7.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "exec": "^0.2.1",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.2.0",
