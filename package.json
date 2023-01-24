@@ -19,7 +19,7 @@
     "gulp-cli": "^2.2.0",
     "gulp-exec": "^4.0.0",
     "should": "^7.1.0",
-    "supertest": "^1.0.0",
+    "supertest": "^6.3.3",
     "swagger-merger": "^1.4.3"
   },
   "scripts": {
